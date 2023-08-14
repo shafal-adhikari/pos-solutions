@@ -1,0 +1,865 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>POS</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/iconfonts/ionicons/dist/css/ionicons.css"
+    />
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css" />
+    <!-- autocomplete:css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/autocomplete.js/css/autoComplete.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-multiselect.css"
+      type="text/css"
+    />
+
+    <!-- endinject -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- End Layout styles -->
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav
+        class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
+      >
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center"
+        >
+          <a class="navbar-brand brand-logo" href="index.html">
+            <img src="assets/images/logo.png" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="index.html">
+            <img src="assets/images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center">
+          <!-- open sidebar menu -->
+          <div class="categories_wrap mr-3">
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="innercanvasmenu"
+              aria-labelledby="innercanvasmenuLabel"
+            >
+              <button
+                type="button"
+                class="btn-close text-reset ms-auto"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+
+              <div class="offcanvas-body sidebar">
+                <ul class="nav">
+                  <!-- <li class="nav-item nav-category">Main Menu</li> -->
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                      <i class="fas fa-home"></i>
+                      <span class="menu-title">Dashboard</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="pos.html">
+                      <i class="fas fa-cash-register"></i>
+                      <span class="menu-title">Menu</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="order.html">
+                      <i class="fas fa-cloud-meatball"></i>
+                      <span class="menu-title">Orders</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                      <i class="fas fa-money-bill"></i>
+                      <span class="menu-title">Inventory</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="vendors.html">
+                      <i class="fas fa-store"></i>
+                      <span class="menu-title">Suppliers</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="customers.html">
+                      <i class="fas fa-users"></i>
+                      <span class="menu-title">Customers</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="employees.html">
+                      <i class="fas fa-user-tie"></i>
+                      <span class="menu-title">Employees</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                      <i class="fas fa-file-invoice"></i>
+                      <span class="menu-title">Reports</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="loyalty.html">
+                      <i class="fas fa-hands"></i>
+                      <span class="menu-title">Loyalty</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="endofday.html">
+                      <i class="fas fa-exchange-alt"></i>
+                      <span class="menu-title">EOD</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="booking.html">
+                      <i class="fas fa-exchange-alt"></i>
+                      <span class="menu-title">Booking</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sync.html">
+                      <i class="fas fa-exchange-alt"></i>
+                      <span class="menu-title">sync</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="integration.html">
+                      <i class="fab fa-mixer"></i>
+                      <span class="menu-title">Integration</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="giftcards.html">
+                      <i class="fas fa-gift"></i>
+                      <span class="menu-title">Gift Cards</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                      <i class="fas fa-cog"></i>
+                      <span class="menu-title">Settings</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a
+            class="btn btn-primary"
+            data-bs-toggle="offcanvas"
+            href="#innercanvasmenu"
+            role="button"
+            aria-controls="innercanvasmenu"
+          >
+            <span class="mdi mdi-menu"></span>
+          </a>
+          <form class="ml-auto search-form d-none d-md-block" action="#">
+            <div class="search-form d-none d-lg-inline-block">
+              <div class="input-group">
+                <button
+                  type="button"
+                  name="search"
+                  id="search-btn"
+                  class="btn btn-flat"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+                <input
+                  type="text"
+                  name="query"
+                  id="search-input"
+                  class="form-control"
+                  placeholder="'button', 'chart' etc."
+                  autofocus=""
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link count-indicator"
+                id="notificationDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count">7</span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+                aria-labelledby="notificationDropdown"
+              >
+                <a class="dropdown-item py-3 border-bottom">
+                  <p class="mb-0 font-weight-medium float-left">
+                    You have 4 new notifications
+                  </p>
+                  <span class="badge badge-pill badge-primary float-right"
+                    >View all</span
+                  >
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-alert m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6
+                      class="preview-subject font-weight-normal text-dark mb-1"
+                    >
+                      Application Error
+                    </h6>
+                    <p class="font-weight-light small-text mb-0">Just now</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-settings m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6
+                      class="preview-subject font-weight-normal text-dark mb-1"
+                    >
+                      Settings
+                    </h6>
+                    <p class="font-weight-light small-text mb-0">
+                      Private message
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6
+                      class="preview-subject font-weight-normal text-dark mb-1"
+                    >
+                      New user registration
+                    </h6>
+                    <p class="font-weight-light small-text mb-0">2 days ago</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="btn btn-primary bg-theme border-0"
+                data-bs-toggle="offcanvas"
+                href="#addtocartCanvas"
+                role="button"
+                aria-controls="addtocartCanvas"
+                ><span class="badge badge-pill badge-danger addtocart">1</span>
+                <span class="mdi mdi-cart"></span>
+              </a>
+            </li>
+            <li
+              class="nav-item dropdown d-none d-xl-inline-block user-dropdown"
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                id="UserDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="img-xs rounded-circle"
+                  src="assets/images/faces/face8.jpg"
+                  alt="Profile image"
+                />
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                aria-labelledby="UserDropdown"
+              >
+                <div class="dropdown-header text-center">
+                  <img
+                    class="img-md rounded-circle"
+                    src="assets/images/faces/face8.jpg"
+                    alt="Profile image"
+                  />
+                  <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                  <p class="font-weight-light text-muted mb-0">
+                    allenmoreno@gmail.com
+                  </p>
+                </div>
+                <a class="dropdown-item" href="user.html"
+                  >My Profile
+                  <span class="badge badge-pill badge-danger">1</span
+                  ><i class="dropdown-item-icon ti-dashboard"></i
+                ></a>
+                <a class="dropdown-item"
+                  >Messages<i class="dropdown-item-icon ti-comment-alt"></i
+                ></a>
+                <a class="dropdown-item"
+                  >Activity<i class="dropdown-item-icon ti-location-arrow"></i
+                ></a>
+                <a class="dropdown-item"
+                  >FAQ<i class="dropdown-item-icon ti-help-alt"></i
+                ></a>
+                <a class="dropdown-item"
+                  >Sign Out<i class="dropdown-item-icon ti-power-off"></i
+                ></a>
+              </div>
+            </li>
+          </ul>
+
+          <button
+            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper1">
+        <!-- partial:partials/_sidebar.html -->
+        <!-- Sidebar -->
+
+        <!-- End sidebar -->
+        <!-- partial -->
+        <div class="main_panel_inner">
+          <div class="content-wrapper">
+            <div class="content">
+              <!-- main Breadcrumb Area -->
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-12 grid-margin stretch-card">
+                  <div class="breadcrumb_top">
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb breadcrumb-custom">
+                        <li class="breadcrumb-item fw-bold">
+                          <a href="index.html" data-abc="true">Home</a>
+                        </li>
+                        <li class="breadcrumb-item fw-bold">
+                          <a href="loyalty.html" data-abc="true">Loyalty</a>
+                        </li>
+                        <li
+                          class="breadcrumb-item active fw-bold"
+                          aria-current="page"
+                        >
+                          <span>Group</span>
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <!-- loyalty starts -->
+              <div class="posloyalty">
+                <div class="card mt-3">
+                  <div class="card-body">
+                    <div
+                      class="table_card d-flex justify-content-between align-items-center mb-3"
+                    >
+                      <div class="add_btn">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <select
+                              id="example-getting-started"
+                              multiple="multiple"
+                            >
+                              <option value="cheese">Group1</option>
+                              <option value="tomatoes">Group2</option>
+                              <option value="mozarella">Group3</option>
+                              <option value="mushrooms">Group4</option>
+                              <option value="pepperoni">Group5</option>
+                              <option value="onions">Group6</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="table_search">
+                        <button
+                          type="button"
+                          class="btn btn-success bg-theme"
+                          data-bs-toggle="modal"
+                          data-bs-target="#issuegroupvoucherModalCenter"
+                        >
+                          <i class="fas fa-file-import"></i> Issue Voucher
+                        </button>
+                      </div>
+                    </div>
+                    <div class="table-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-hover align-middle table-nowrap mb-0"
+                        >
+                          <thead class="table-light">
+                            <tr>
+                              <th scope="col">Customer Name</th>
+                              <th scope="col">Phone</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Total amount Spent by day</th>
+                              <th scope="col">
+                                Loyalty earned with each $ spent
+                              </th>
+                              <th scope="col">
+                                $ value of total points earned
+                              </th>
+                              <th scope="col">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>John Doe</td>
+                              <td>+123456789</td>
+                              <td>abc@gmail.com</td>
+                              <td>$10.00</td>
+                              <td>5.00</td>
+                              <td>$40.00</td>
+                              <td>
+                                <a
+                                  href=""
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#customerdetailModalCenter"
+                                  ><i
+                                    class="fas fa-eye"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    title="Add New Item Type From Here"
+                                  ></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>John Doe</td>
+                              <td>+123456789</td>
+                              <td>abc@gmail.com</td>
+                              <td>$10.00</td>
+                              <td>5.00</td>
+                              <td>$40.00</td>
+                              <td>
+                                <a
+                                  href=""
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#customerdetailModalCenter"
+                                  ><i
+                                    class="fas fa-eye"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    title="Add New Item Type From Here"
+                                  ></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>John Doe</td>
+                              <td>+123456789</td>
+                              <td>abc@gmail.com</td>
+                              <td>$10.00</td>
+                              <td>5.00</td>
+                              <td>$40.00</td>
+                              <td>
+                                <a
+                                  href=""
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#customerdetailModalCenter"
+                                  ><i
+                                    class="fas fa-eye"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    title="Add New Item Type From Here"
+                                  ></i
+                                ></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div
+                        class="company_footer d-flex justify-content-between mt-3"
+                      >
+                        <div class="table_btn">
+                          <!-- 
+                                                <button type="button" class="btn btn- all_btn text-white">Print</button>
+                                                <button type="button" class="btn btn- all_btn text-white">Export</button> -->
+                          <button
+                            type="button"
+                            class="btn btn- all_btn text-white"
+                            data-bs-toggle="modal"
+                            data-bs-target="#marketingmaterialsModalCenter"
+                          >
+                            Email
+                          </button>
+                        </div>
+
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                              <a class="page-link" href="#" tabindex="-1"
+                                >Previous</a
+                              >
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">Next</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Content -->
+          </div>
+          <!-- End Content Wrapper -->
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid clearfix">
+              <span
+                class="text-muted d-block text-center text-sm-left d-sm-inline-block"
+                >Copyright © POSApt 2022</span
+              >
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- modal -->
+    <!-- customer detail  Modal -->
+    <div
+      class="modal fade"
+      id="customerdetailModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="customerdetailModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="customerdetailmodalLabel">
+              Customers Loyalty Profile
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="loyaltytable">
+              <div class="table-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-hover align-middle table-nowrap mb-0"
+                  >
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Total Amount Spent</th>
+                        <th scope="col">Total Point Earned</th>
+                        <th scope="col">Total Remaining Point</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2.50 PM</td>
+                        <td>09/22/2022</td>
+                        <td>Product 1</td>
+                        <td>10 points</td>
+                        <td>5 points</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <p class="fw-bold">Total Points: 3500</p>
+              <p class="fw-bold">Used Points: 1500</p>
+              <p class="fw-bold">Remaining Points: 1200</p>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <!-- <button type="button" class="btn btn-primary all_btn rounded-0">
+                        Add</button> -->
+            <button
+              type="button"
+              class="btn btn-danger rounded-0"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Issue Voucher Modal -->
+    <div
+      class="modal fade"
+      id="issuegroupvoucherModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="issuegroupvoucherModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="issuegroupvouchermodalLabel">
+              Issue Voucher
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="issuevoucherform">
+              <!-- <div class="form-group">
+                            <label class="control-label">Voucher No.</label>
+                            <input type="text" class="form-control" placeholder="Enter Voucher No." spellcheck="false" data-ms-editor="true">
+                        </div> -->
+
+              <div class="form-group">
+                <label class="control-label">Discount(%)</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Discount Amount"
+                  spellcheck="false"
+                  data-ms-editor="true"
+                />
+              </div>
+              <div class="form-group">
+                <label class="control-label">Voucher Expiry Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="Enter Expiry Date"
+                  spellcheck="false"
+                  data-ms-editor="true"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <button type="button" class="btn btn-primary all_btn rounded-0">
+              Send
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger rounded-0"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Marketing Materials Modal -->
+    <div
+      class="modal fade"
+      id="marketingmaterialsModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="marketingmaterialsModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="marketingmaterialsmodalLabel">
+              Upload Marketing Materials
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="newsupplier_form">
+                <div class="form-group">
+                  <label class="control-label">Subject</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder=""
+                    value=""
+                  />
+                </div>
+
+                <div class="marketingupload">
+                  <label style="cursor: pointer" for="file_upload">
+                    <img
+                      src=""
+                      alt=""
+                      class="uploaded-image"
+                      data-pagespeed-url-hash="3067457553"
+                      onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                    />
+                    <div class="h-100">
+                      <div class="upload_btn">
+                        <div class="upload_para">
+                          <i class="fas fa-cloud-upload-alt"></i>
+                          <h5><b>Choose Your Files/Images to Upload</b></h5>
+                          <h6 class="mt-10 mb-70">Or Drop Your Image Here</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!--upload-content-->
+                    <input
+                      data-required="image"
+                      type="file"
+                      name="image_name"
+                      id="file_upload"
+                      class="image-input"
+                      data-traget-resolution="image_resolution"
+                      value=""
+                    />
+                  </label>
+                </div>
+              </div>
+
+              <div class="bank_details email_details">
+                <div class="form-group">
+                  <div class="pt-0">
+                    <label class="mb-0">Your Message</label>
+                    <div class="">
+                      <div id="editor">
+                        <h6>Heading 1</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <button type="button" class="btn btn-primary all_btn rounded-0">
+              Upload
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger rounded-0"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- plugins:js -->
+    <!-- plugins:js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/vendors/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/autocomplete.js/autoComplete.min.js"></script>
+    <script src="assets/vendors/autocomplete.js/advancedform.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- inject:js -->
+    <!-- sidebarjs -->
+    <script src="assets/js/shared/off-canvas.js"></script>
+    <script src="assets/js/shared/misc.js"></script>
+    <script src="assets/js/shared/main.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/17.0.0/classic/ckeditor.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#example-getting-started").multiselect();
+      });
+    </script>
+    <script>
+      ClassicEditor.create(document.querySelector("#editor"));
+    </script>
+  </body>
+</html>

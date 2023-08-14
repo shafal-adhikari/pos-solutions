@@ -1,0 +1,47 @@
+/* button {
+    z-index: 2;
+    cursor: pointer;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+  }
+   */
+.cropped-image {
+  height: 600px;
+  width: auto;
+}
+
+.cropped-image-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+._coverImage-holder {
+  padding: 8px 15px;
+  background-color: #eaf8f5;
+  color: black !important;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100% !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.crop-container {
+  height: 600px;
+  width: 600px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  position: absolute;
+  bottom: -15px;
+}

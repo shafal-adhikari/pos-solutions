@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>POS</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/iconfonts/ionicons/dist/css/ionicons.css">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
+    <!-- endinject -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- End Layout styles -->
+
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+                <a class="navbar-brand brand-logo" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo" /> </a>
+                <a class="navbar-brand brand-logo-mini" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo" /> </a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center">
+                <!-- open sidebar menu -->
+                <div class="categories_wrap mr-3">
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="innercanvasmenu" aria-labelledby="innercanvasmenuLabel">
+                        <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                        <div class="offcanvas-body  sidebar">
+                            <ul class="nav">
+
+                                <!-- <li class="nav-item nav-category">Main Menu</li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">
+                                        <i class="fas fa-home"></i>
+                                        <span class="menu-title">Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pos.html">
+                                        <i class="fas fa-cash-register"></i>
+                                        <span class="menu-title">Menu</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="order.html">
+                                        <i class="fas fa-cloud-meatball"></i>
+                                        <span class="menu-title">Orders</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="inventory.html">
+                                        <i class="fas fa-money-bill"></i>
+                                        <span class="menu-title">Inventory</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vendors.html">
+                                        <i class="fas fa-store"></i>
+                                        <span class="menu-title">Suppliers</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="customers.html">
+                                        <i class="fas fa-users"></i>
+                                        <span class="menu-title">Customers</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="employees.html">
+                                        <i class="fas fa-user-tie"></i>
+                                        <span class="menu-title">Employees</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="reports.html">
+                                        <i class="fas fa-file-invoice"></i>
+                                        <span class="menu-title">Reports</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="loyalty.html">
+                                        <i class="fas fa-hands"></i>
+                                        <span class="menu-title">Loyalty</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="endofday.html">
+                                        <i class="fas fa-exchange-alt"></i>
+                                        <span class="menu-title">EOD</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="booking.html">
+                                        <i class="fas fa-exchange-alt"></i>
+                                        <span class="menu-title">Booking</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sync.html">
+                                        <i class="fas fa-exchange-alt"></i>
+                                        <span class="menu-title">sync</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="integration.html">
+                                        <i class="fab fa-mixer"></i>
+                                        <span class="menu-title">Integration</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="giftcards.html">
+                                        <i class="fas fa-gift"></i>
+                                        <span class="menu-title">Gift Cards</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="settings.html">
+                                        <i class="fas fa-cog"></i>
+                                        <span class="menu-title">Settings</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#innercanvasmenu" role="button" aria-controls="innercanvasmenu">
+                    <span class="mdi mdi-menu"></span>
+                </a>
+                <ul class="navbar-nav mr-lg-4 w-100 align-items-center">
+                    <li class="nav-item dropdown mr-1">
+                        <a class="nav-link text-white dropdown-toggle d-flex justify-content-center align-items-center my_company" href="#" data-bs-toggle="dropdown">
+                            <p class="mb-0">Demo Company (Global)</p>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown mt-0 pb-0">
+
+                            <a class="dropdown-item d-flex align-items-center border-bottom">
+                                <div class="item-thumbnail">
+                                    <img src="assets/images/logo1.png" alt="image" class="profile-pic">
+                                </div>
+                                <div class="item-content flex-grow">
+                                    <h6 class="ellipsis1 font-weight-normal theme-color1 font-weight-bold mb-0">Volgi Global
+                                    </h6>
+
+                                </div>
+
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center">
+                                <div class="item-thumbnail">
+                                    <img src="assets/images/logo1.png" alt="image" class="profile-pic">
+                                </div>
+                                <div class="item-content flex-grow">
+                                    <h6 class="ellipsis1 font-weight-normal theme-color1 font-weight-bold mb-0">Volgi Global
+                                    </h6>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+                            <i class="mdi mdi-bell-outline"></i>
+                            <span class="count">7</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+                            <a class="dropdown-item py-3 border-bottom">
+                                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                                <span class="badge badge-pill badge-primary float-right">View all</span>
+                            </a>
+                            <a class="dropdown-item preview-item py-3">
+                                <div class="preview-thumbnail">
+                                    <i class="mdi mdi-alert m-auto text-primary"></i>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal text-dark mb-1">Application Error</h6>
+                                    <p class="font-weight-light small-text mb-0"> Just now </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item py-3">
+                                <div class="preview-thumbnail">
+                                    <i class="mdi mdi-settings m-auto text-primary"></i>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal text-dark mb-1">Settings</h6>
+                                    <p class="font-weight-light small-text mb-0"> Private message </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item py-3">
+                                <div class="preview-thumbnail">
+                                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal text-dark mb-1">New user registration</h6>
+                                    <p class="font-weight-light small-text mb-0"> 2 days ago </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-primary bg-theme border-0" data-bs-toggle="offcanvas" href="#addtocartCanvas" role="button" aria-controls="addtocartCanvas"><span class="badge badge-pill badge-danger  addtocart">1</span>
+                            <span class="mdi mdi-cart"></span>
+                          </a>
+                    </li>
+                    <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
+                        <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="img-xs rounded-circle" src="assets/images/faces/face8.jpg" alt="Profile image"> </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                            <div class="dropdown-header text-center">
+                                <img class="img-md rounded-circle" src="assets/images/faces/face8.jpg" alt="Profile image">
+                                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                                <p class="font-weight-light text-muted mb-0">allenmoreno@gmail.com</p>
+                            </div>
+                            <a class="dropdown-item" href="user.html">My Profile <span class="badge badge-pill badge-danger">1</span><i class="dropdown-item-icon ti-dashboard"></i></a>
+
+                            <a class="dropdown-item">Activity<i class="dropdown-item-icon ti-location-arrow"></i></a>
+
+                            <a class="dropdown-item" href="login.html">Sign Out<i class="dropdown-item-icon ti-power-off"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper1">
+            <!-- partial:partials/_sidebar.html -->
+            <!-- Sidebar -->
+
+            <!-- End sidebar -->
+            <!-- partial -->
+            <div class=" main_panel_inner">
+                <div class="content-wrapper">
+                    <div class="content">
+                        <!-- main Breadcrumb Area -->
+                        <div class="row  d-flex justify-content-center">
+                            <div class="col-md-12 grid-margin stretch-card">
+
+                                <div class="breadcrumb_top ">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb breadcrumb-custom">
+                                            <li class="breadcrumb-item fw-bold"><a href="index.html" data-abc="true">Home</a></li>
+                                            <li class="breadcrumb-item fw-bold"><a href="employees.html" data-abc="true">Employee</a></li>
+                                            <li class="breadcrumb-item active fw-bold" aria-current="page"><span>Add New Employee</span></li>
+                                        </ol>
+                                    </nav>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newemployee">
+                            <!-- Form tab start -->
+                            <div class="row  d-flex justify-content-center">
+                                <div class="col-sm-12">
+                                    <div class="budgetlisttab nav-active-theme mb-0">
+                                        <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                                            <li class="nav-item"><a class="nav-link active" id="employee-tab" data-bs-toggle="tab" href="#employeeinfo" role="tab" aria-controls="home" aria-selected="true">Employee Information</a></li>
+                                            <li class="nav-item"><a class="nav-link" id="administration-tab" data-bs-toggle="tab" href="#administrationinfo" role="tab" aria-controls="administration" aria-selected="false">Administration</a></li>
+                                            <li class="nav-item"><a class="nav-link" id="taxinformation-tab" data-bs-toggle="tab" href="#taxinfo" role="tab" aria-controls="taxinformation" aria-selected="false">Tax Information</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content mb-0">
+                                        <div class="tab-pane fade active show" id="employeeinfo" role="tabpanel" aria-labelledby="employee-tab">
+
+                                            <!-- Form employee start -->
+                                            <div class="card mt-2">
+                                                <div class="card-body bg-light-blue">
+                                                    <div class="contact_form">
+                                                        <div class="mr-md-3 mr-xl-5">
+                                                            <h4 class="font-weight-bold">Employee's Information</h4>
+                                                        </div>
+                                                        <div class="row">
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0 d-flex align-items-center">Employee No.  <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Key to be received from existing Supplier if Supplier already exists or create New"></i></label>
+                                                                        <input type="text" class="form-control" placeholder="eg:001">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0 d-flex align-items-center">Job Title  <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Supplier details here"></i></label>
+                                                                        <input type="text" class="form-control" placeholder="eg:IT Engineer">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0 d-flex align-items-center">First Name  <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Supplier details here"></i></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter First Name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0 d-flex align-items-center">Middle Name  <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Supplier details here"></i></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Middle Name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0 d-flex align-items-center">Last Name  <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Supplier details here"></i></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Last Name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0 d-flex align-items-center">Preferred Name  <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Supplier details here"></i></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Preferred Name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0 d-flex align-items-center">Mobile  <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Supplier details here"></i></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Mobile Number">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0 d-flex align-items-center">Phone  <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Supplier details here"></i></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Phone Number">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0"> Email</label>
+                                                                        <div>
+                                                                            <div class="control-group">
+                                                                                <input type="text" class="form-control" placeholder="Enter Email">
+                                                                            </div>
+
+
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Address</label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Address (Street No. & Name)">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Subrub</label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Subrub">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">State</label>
+                                                                        <input type="text" class="form-control" placeholder="Enter State">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Zip Code</label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Zip code">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Country</label>
+                                                                        <input type="text" class="form-control" placeholder="Country">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Gender</label>
+                                                                        <select class="form-control">
+                              
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                               
+                              </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Pay Scale</label>
+                                                                        <input type="text" class="form-control" placeholder="eg:Retail Level 1, 2 Etc">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Annual Salary</label>
+                                                                        <input type="text" class="form-control" placeholder="eg:Your Annual Salary">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Hourly Rate</label>
+                                                                        <input type="text" class="form-control" placeholder="eg:Your Hourly Rate">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Employee Category<i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Person You want to contact"></i></label>
+                                                                        <select class="form-control form-select">
+                              
+                                <option>Full Time</option>
+                                <option>Part Time</option>
+                                
+                              </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class=" control-label d-flex align-items-center mt-3">Images:</label>
+                                                                        <input type="file" name="attachments" class="form-control-file"> </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Emergency contact -->
+                                            <div class="card mt-2">
+                                                <div class="card-body bg-light-blue">
+                                                    <div class="contact_form">
+
+
+                                                        <!--  details -->
+                                                        <div class="emergency_info">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Emergency Contact Name <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="If your phone or mobile is out of reach we will contact for urgent need only."></i></label>
+                                                                            <input type="text" class="form-control" placeholder="Enter State">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Relationship<i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Your relationship with respectove person"></i></label>
+                                                                            <input type="text" class="form-control" placeholder="Enter Relationship with this person">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Phone<i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Person You want to contact"></i></label>
+                                                                            <input type="text" class="form-control" placeholder="Enter Phone">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Email<i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Person You want to contact"></i></label>
+                                                                            <input type="text" class="form-control" placeholder="Enter Email">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- General Information -->
+
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- end -->
+
+
+                                        <div class="tab-pane fade" id="taxinfo" role="tabpanel" aria-labelledby="taxinfo-tab">
+                                            <!-- Financial details -->
+                                            <div class="card mt-2">
+                                                <div class="card-body bg-light-blue">
+                                                    <div class="contact_form">
+                                                        <div class="finance_info">
+                                                            <div class="mr-md-3 mr-xl-5">
+                                                                <h4 class="font-weight-bold">Tax Information</h4>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- bank details -->
+                                                        <!-- Taxes -->
+                                                        <div class="Payroll_taxes">
+
+                                                            <div class="row">
+
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class="pt-0">
+                                                                            <label for="exampleInputEmail1" class="mb-0">Tax File No.</label>
+                                                                            <input type="date" class="form-control" placeholder="Eg: 874103550">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">TFN Exepmtion</label>
+                                                                            <input type="date" class="form-control" placeholder="Enter TFN Exepmtion">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Employment Type </label>
+                                                                            <select class="form-control">
+                          
+                                <option>Casual</option>
+                                <option>Part Time</option>
+                                <option value="">Full Time</option>
+                               
+                              </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Residency Status </label>
+                                                                            <select class="form-control">
+                          
+                                <option>Active</option>
+                                <option>Inactive</option>
+                              
+                              </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card mt-2">
+                                                <div class="card-body bg-light-blue">
+                                                    <div class="other_info">
+
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Superannuation Fund Name <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="If your phone or mobile is out of reach we will contact for urgent need only."></i></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Superannuation Fund Name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Payroll Tax State<i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Your relationship with respectove person"></i></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Payroll Tax State">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="col-md-6 col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class=" pt-0">
+                                                                        <label class="mb-0">Holiday Group<i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Person You want to contact"></i></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Holiday Group">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                        <!-- end -->
+
+                                        <div class="tab-pane fade" id="administrationinfo" role="tabpanel" aria-labelledby="administration-tab">
+                                            <!-- Financial details -->
+                                            <div class="card mt-2">
+                                                <div class="card-body bg-light-blue">
+                                                    <div class="contact_form">
+
+                                                        <!-- General Information -->
+                                                        <div class="generel_info">
+                                                            <div class="mr-md-3 mr-xl-5">
+                                                                <h4 class="font-weight-bold">Administration</h4>
+                                                            </div>
+                                                            <div class="row">
+
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class="pt-0">
+                                                                            <label for="exampleInputEmail1" class="mb-0">Employment Date</label>
+                                                                            <input type="date" class="form-control" placeholder="Eg: Chart of Accounts">
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">LSL Commencement Date</label>
+                                                                            <input type="date" class="form-control" placeholder="Eg: Chart of Accounts">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">LSL Eligibility Date</label>
+                                                                            <input type="date" class="form-control" placeholder="Select Segment">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Years of Service</label>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6 col-lg-4">
+                                                                                    <div class="yearsofservice">
+                                                                                        <input type="text" class="form-control" placeholder="Days">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6 col-lg-4">
+                                                                                    <div class="yearsofservice">
+                                                                                        <input type="text" class="form-control" placeholder="Month">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Status</label>
+                                                                            <select class="form-control">
+                          
+                                <option>Active</option>
+                                <option>Inactive</option>
+                               
+                              </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Inactive Date</label>
+                                                                            <input type="date" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Termination Date</label>
+                                                                            <input type="date" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Birth Date</label>
+                                                                            <input type="date" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <div class=" pt-0">
+                                                                            <label class="mb-0">Age</label>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6 col-lg-4">
+                                                                                    <div class="yearsofservice">
+                                                                                        <input type="text" class="form-control" placeholder="20 Years">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6 col-lg-4">
+                                                                                    <div class="yearsofservice">
+                                                                                        <input type="text" class="form-control" placeholder="14 Months">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <div class="form-check form-group">
+                                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                                Authorised to Approve Leave
+                                                                                <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="If your phone or mobile is out of reach we will contact for urgent need only."></i>
+                                                                            </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 col-lg-4 text-left">
+                                                                            <div class="form-check form-group">
+                                                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                                Authorised to Approve Timesheets
+                                                                                <i class="fas fa-question" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="If your phone or mobile is out of reach we will contact for urgent need only."></i>
+
+                                                                            </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+
+
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- end -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form tab end -->
+
+
+                            <div class="col-md-12 text-center mt-3 mb-3">
+                                <div class=" justify-content-center">
+                                    <button type="button" class="btn btn-primary all_btn rounded-0">
+                                Save</button>
+                                    <button type="button" class="btn btn-danger rounded-0 border-0">Cancel</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- form end -->
+                    </div>
+                </div>
+                <!-- End Content -->
+            </div>
+            <!-- End Content Wrapper -->
+            <!-- content-wrapper ends -->
+            <!-- partial:partials/_footer.html -->
+            <footer class="footer">
+                <div class="container-fluid clearfix">
+                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © VolgAI.com 2021</span>
+                </div>
+            </footer>
+            <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+
+    <!-- plugins:js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/vendors/js/bootstrap.bundle.min.js"></script>
+
+    <!-- inject:js -->
+    <!-- sidebarjs -->
+    <script src="assets/js/shared/off-canvas.js"></script>
+    <script src="assets/js/shared/misc.js"></script>
+    <script src="assets/js/shared/main.js"></script>
+
+
+</body>
+
+</html>
